@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Redirects</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #000000;
+            background-size: 300% 300%;
+            background-attachment: fixed;
+            background-position: 0% 50%;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            cursor: default
+        }
+
+        .container a {
+            cursor: pointer
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background-color: #111111;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid grey;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .navbar .brand img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links li {
+            display: inline;
+        }
+
+        .navbar .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+            cursor: pointer
+        }
+
+        .navbar .nav-links a:hover,
+        a:visited:hover {
+            color: #6865ff;
+        }
+
+        a,
+        a:visited {
+            color: #bcc0ff;
+            text-decoration: none;
+            transition: color 0.3s;
+            cursor: default
+        }
+
+        a:hover {
+            color: #e4e4e4;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #acacac;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            cursor: default;
+            color: #FFFFFF;
+            font-weight: 1000;
+
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        .medium-text {
+            font-weight: 500;
+        }
+
+        @keyframes cool {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 50% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes rave {
+
+            0%,
+            100% {
+                color: rgba(255, 0, 0, 1);
+            }
+
+            14% {
+                color: rgba(255, 165, 0, 1);
+            }
+
+            28% {
+                color: rgba(255, 255, 0, 1);
+            }
+
+            42% {
+                color: rgba(0, 128, 0, 1);
+            }
+
+            57% {
+                color: rgba(0, 0, 255, 1);
+            }
+
+            71% {
+                color: rgba(75, 0, 130, 1);
+            }
+
+            85% {
+                color: rgba(128, 0, 128, 1);
+            }
+        }
+
+        .rave-animation {
+            animation: rave 5s infinite alternate;
+        }
+
+        .here {
+            color: #b3b3b3;
+            cursor: not-allowed;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 4px solid #061f30;
+            border-top-color: #1d9bf0;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .button {
+            background-color: #0b0047;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-family: 'Chirp', sans-serif;
+        }
+
+        .button:hover {
+            background-color: #171e6d;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a style="cursor: default" class="brand" href="https://exerinity.com/">exerinity</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>exerinity's redirects</h1>
+        <p>
+            The following is a small repository of redirects for URLs I find useful. Maybe you will too. This website
+            uses Cloudflare Pages, and a _redirects file.
+        </p>
+        <p>
+            Base URL: <strong>r.ex3.lol</strong> or <strong>r.exerinity.com</strong>
+        </p>
+        <h2>PowerShell Scripts</h2>
+        <ul>
+            <li>Chris Titus Tech WinUtils: <a href="/w">/w</a> (leads to <a
+                    href="https://christitus.com/win">christitus.com/win</a>)</li>
+            <li>Massgrave Activation: <a href="/aw">/aw</a> (leads to <a
+                    href="https://get.activated.win">get.activated.win</a>)</li>
+        </ul>
+        <h2>My Stuff</h2>
+        <ul>
+            <li>Quick download Voxity for Windows: <a href="/vw">/vw</a> (leads to <a href="https://github.com/exerinity/voxity.electron/releases/download/v1.3/Voxity-1.3.0-win-x64-setup.exe">https://github.com/exerinity/voxity.electron/releases/download/v1.3/Voxity-1.3.0-win-x64-setup.exe</a>)</li>
+            <li>Quick download Voxity AppImage: <a href="/va">/va</a> (leads to <a href="https://github.com/exerinity/voxity.electron/releases/download/v1.3/Voxity-1.3.0.AppImage">https://github.com/exerinity/voxity.electron/releases/download/v1.3/Voxity-1.3.0.AppImage</a>)</li>
+        </ul>
+        <h2>Client Mods</h2>
+        <ul>
+            <li>Quick Vencord install script (.sh): <a href="/v">/v</a> (leads to <a href="https://vencord.dev/install.sh">https://vencord.dev/install.sh</a>)</li>
+        </ul>
+        <hr>
+        <p>
+            This site will be continiously updated with more links when I see fit. If you have any suggestions, <a href="https://exerinity.com/email">feel free to send them over!</a><br>
+            Last update: 26 Feb 2026 - <a href="https://github.com/EX3Corporation/r">Source</a>
+        </p>
+    </div>
+</body>
